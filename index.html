@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Pribadi</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #071a35, #123f70, #087eaa);
+      color: white;
+      min-height: 100vh;
+      line-height: 1.7;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: rgba(0, 0, 0, 0.2);
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(12px);
+    }
+
+    nav h2 { color: #64e4ff; }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+    }
+
+    nav a:hover { color: #64e4ff; }
+
+    .hero {
+      text-align: center;
+      padding: 90px 20px 70px;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 6vw, 55px);
+      margin: 15px 0;
+    }
+
+    .hero h1 span { color: #64e4ff; }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      color: #d7eaff;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 11px 24px;
+      background: #64e4ff;
+      color: #071a35;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 45px 22px;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #64e4ff;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.09);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 25px;
+      border-radius: 18px;
+      backdrop-filter: blur(12px);
+      transition: transform 0.3s;
+    }
+
+    .card:hover { transform: translateY(-5px); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card h3 {
+      color: #64e4ff;
+      margin-bottom: 10px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .skills span {
+      background: rgba(100, 228, 255, 0.15);
+      border: 1px solid #64e4ff;
+      padding: 8px 16px;
+      border-radius: 20px;
+    }
+
+    .contact { text-align: center; }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: rgba(0, 0, 0, 0.2);
+      color: #d7eaff;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav a { margin: 0 5px; }
+      .hero { padding-top: 60px; }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <h2>MyPortfolio.</h2>
+    <div>
+      <a href="#about">Tentang</a>
+      <a href="#skills">Skill</a>
+      <a href="#projects">Proyek</a>
+      <a href="#contact">Kontak</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <p>Welcome guys in my portofolio</p>
+    <h1><span>Yustisio Ghaniy Al Janabi</span></h1>
+    <h3>Mahasiswa Universitas Insan Pembangunan Indonesia</h3>
+    <p>
+      "Sebagai mahasiswa yang aktif mendalami dunia coding dan web development, saya selalu bersemangat menciptakan solusi digital yang kreatif untuk masa depan yang lebih baik."
+    </p>
+    <a class="btn" href="#projects">Lihat Proyek Saya</a>
+  </header>
+
+  <section id="about">
+    <h2>Tentang Saya</h2>
+    <div class="card">
+      <p>
+        Saya adalah mahasiswa Sistem Informasi yang tertarik pada
+        teknologi informasi, desain web, dan pengembangan aplikasi.
+        Website ini menjadi tempat untuk menampilkan perjalanan belajar,
+        keterampilan, dan pencapaian saya.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Keterampilan</h2>
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>Git & GitHub</span>
+      <span>Microsoft Office</span>
+      <span>UI/UX Dasar</span>
+      <span>Problem Solving</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Proyek Saya</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Personal Portfolio</h3>
+        <p>Website untuk memperkenalkan diri dan menampilkan keterampilan.</p>
+      </div>
+      <div class="card">
+        <h3>Website Informasi</h3>
+        <p>Proyek latihan menyajikan informasi dengan HTML dan CSS.</p>
+      </div>
+      <div class="card">
+        <h3>Proyek Berikutnya</h3>
+        <p>Tempat untuk menampilkan proyek dan pencapaian baru.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Hubungi Saya</h2>
+    <div class="card">
+      <p>Tertarik bekerja sama atau berdiskusi tentang teknologi?</p>
+      <p>Silakan hubungi saya melalui email.</p>
+      <br>
+      <a class="btn" href="mailto:abialjanabi@gmail.com">
+        Kirim Email
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Yustisio Ghaniy Al Janabi | My Portfolio</p>
+    <p>Risk is What you pay for opportunity,"No risk No ferrari.</p>
+  </footer>
+</body>
+</html>
